@@ -35,6 +35,15 @@ public class ChessMatch {
     return (ChessPiece) capturePiece;
   }
 
+  //Converte a posição de xadrez para uma posição de matriz normal
+  //Faz a validação depois que o usuario digita a posição em que a peça esta.
+  //Retorna os movimentos possiveis da peça dessa posição.
+  public boolean[][] possibleMoves(ChessPosition sourcePosition) {
+    Position position = sourcePosition.toPosition();
+    validateSourcePosition(position);
+    return board.piece(position).possibleMoves();
+  }
+
   private Piece makeMove(Position source, Position target) {
     Piece p = board.removePiece(source);
     Piece capturedPiece = board.removePiece(target);
