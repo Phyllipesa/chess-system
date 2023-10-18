@@ -61,8 +61,18 @@ public class ChessMatch {
     }
   }
 
-  //Se para a peça de origem a posição de destino não é um movimento possivel.
   private void validateTargetPosition(Position source, Position target) {
+  /*Se para a peça de origem a posição de destino não é um movimento possivel.
+    Ao construir a peça "piece(source)" o programa já sabe sua identidade
+      pois fornecemos a ele a posição de origem(source), e nela há uma peça.
+      exemplo:
+            !board.King
+
+    Agora que temos a peça, vamos acessar o metodo a SUPERCLASSE "possibleMove(target)"
+      para verificarmos os movimentos possiveis.
+      exemplo:
+            !board.King.possibleMove(target)
+    */
     if (!board.piece(source).possibleMove(target)) {
       throw new ChessException("There chosen piece can't move to target position");
     }
