@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ddd23d-8ae9-4f66-8224-ce81bb97ac78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/ChessMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chess/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/ChessPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chess/ChessPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/ChessPosition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
