@@ -6,10 +6,15 @@ import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ChessMatch {
   private int turn;
   private Color currentPlayer;
   private Board board;
+  private List<Piece> piecesOnTheBoard = new ArrayList<>();
+  private List<Piece> capturedPieces = new ArrayList<>();
 
   public ChessMatch() {
     board = new Board(8, 8);
@@ -58,9 +63,17 @@ public class ChessMatch {
   }
 
   private Piece makeMove(Position source, Position target) {
+    //Retira a peça de origem do tabuleiro
     Piece p = board.removePiece(source);
+    //Caso tenha uma peça na posição de destino a mesma é capturada
     Piece capturedPiece = board.removePiece(target);
+    //Coloca na posição de destino a peça que estavana posição de origem.
     board.placePiece(p, target);
+
+    if (capturedPiece != null) {
+      piecesOnTheBoard.remove(capturedPiece);
+      capturedPieces.add(capturedPiece);
+    }
     return capturedPiece;
   }
 
@@ -106,7 +119,10 @@ public class ChessMatch {
   }
 
   private void placeNewPiece(char column, int row, ChessPiece piece) {
+    //Coloca uma peça no tabuleiro
     board.placePiece(piece, new ChessPosition(column, row).toPosition());
+    //Coloca essa peça na lista "piecesOnTheBoard"
+    piecesOnTheBoard.add(piece);
   }
 
   private void initialSetup() {
