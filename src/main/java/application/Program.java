@@ -34,7 +34,7 @@ public class Program {
         System.out.print("Target: ");
         ChessPosition target = UI.readChessPosition(sc);
 
-        ChessPiece capturedPiece = chessMatch.performChessMoves(source, target);
+        ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 
         //Verifica se alguma peça foi capturada
         //  Se sim, essa peça é adicionada a array captured.
