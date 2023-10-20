@@ -1,6 +1,7 @@
 # chess-system
 
 Este é o projeto onde construo um sistema de xadrez seguindo passo a passo as orientações do professor @acenelio (Nelio Alves).
+
 O intuito é coloco em prática todos os conceitos de Java estudados até o momento que são:
 
 - Encapsulation
