@@ -39,7 +39,7 @@ Entre no diretório
 Instale as dependências
 
 ```bash
-  npm install
+  mvn install
 ```
 
 Entre no diretório
@@ -60,5 +60,5 @@ Java
 
 ## Autores
 
-- [@phyllipesa](https://github.com/brunokye) - Desenvolvimento do projeto
+- [@phyllipesa](https://github.com/phyllipesa) - Desenvolvimento do projeto
 - [@acenelio](https://github.com/acenelio) - Commit inicial
